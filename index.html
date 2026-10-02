@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CleanCLI – ripulisci la tua impronta digitale | Mirenlock</title>
+<meta name="description" content="Programma per Windows che prepara richieste di cancellazione dei dati e disiscrizioni, solo dopo la tua conferma. I dati restano sul tuo PC.">
+<style>
+:root{--bg:#fbfbf9;--fg:#1c1f23;--mut:#5b6470;--card:#fff;--line:#e3e5e8;--acc:#0b6e5c;--accfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1316;--fg:#e8eaec;--mut:#9aa4af;--card:#171c20;--line:#2a3138;--acc:#3ec9a7;--accfg:#06201a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+.brand{font-weight:700;letter-spacing:.02em}
+.lang a{color:var(--mut);text-decoration:none;font-size:15px}
+.hero{padding:64px 0 40px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--mut);max-width:640px}
+.btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;margin-top:18px}
+.btn.off{opacity:.55;pointer-events:none}
+.note{color:var(--mut);font-size:15px;margin-top:10px}
+section{padding:28px 0}
+h2{font-size:24px;margin:0 0 14px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--mut);font-size:16px}
+ol.steps{padding-left:22px}ol.steps li{margin:8px 0}
+code,pre{font-family:ui-monospace,Consolas,monospace;font-size:15px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;white-space:pre-wrap}
+.limits li{margin:6px 0;color:var(--mut)}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0;color:var(--mut);font-size:15px}
+footer a{color:var(--mut)}
+a{color:var(--acc)}
+</style></head><body>
+<header><div class="wrap"><span class="brand">Mirenlock · CleanCLI</span><span class="lang"><a href="en/">English</a></span></div></header>
+<main class="wrap">
+<div class="hero"><h1>CleanCLI: chiedi la cancellazione dei tuoi dati, dal tuo PC.</h1><p class="lead">Un programma per Windows che prepara le richieste di cancellazione (GDPR e norme analoghe) e le disiscrizioni dalle newsletter. Niente parte senza la tua conferma.</p><span class="btn off">Disponibile a breve</span><p class="note">Pagamento una tantum, tramite Lemon Squeezy. Il prezzo e le tasse sono mostrati al checkout. Rimborso entro 14 giorni.</p></div>
+<section><h2>Cosa fa</h2><div class="grid"><div class="card"><h3>Richieste di cancellazione</h3><p>Prepara una richiesta formale al contatto privacy del servizio, con riferimenti di legge e scadenza del tuo paese (UE/SEE, Regno Unito, USA-California, Brasile), e la segue fino a risposta o scadenza.</p></div><div class="card"><h3>Disiscrizioni</h3><p>Disiscrizione One-Click (RFC 8058) solo se il messaggio ha firma DKIM valida e il link è HTTPS verso un host pubblico.</p></div><div class="card"><h3>Guide per i servizi protetti</h3><p>Per Google, Meta, Apple, Microsoft, Amazon e simili non automatizza nulla: ti mostra la procedura passo-passo.</p></div><div class="card"><h3>Registro delle prove</h3><p>Ogni invio viene registrato in un registro a catena di hash, esportabile e verificabile da terzi. Rileva modifiche e cancellazioni.</p></div><div class="card"><h3>Siti non in elenco</h3><p>Puoi aggiungere un sito: il programma legge poche pagine pubbliche, trova l&#x27;informativa privacy e propone il contatto, che confermi tu.</p></div><div class="card"><h3>Italiano e inglese</h3><p>Menu guidato in italiano e inglese. Nessun comando da ricordare: si apre con un doppio clic.</p></div></div></section>
+<section><h2>Cosa non fa, e dove stanno i tuoi dati</h2><ul class="limits"><li>I tuoi dati (nome, e-mail, richieste, registro) restano solo sul tuo computer, cifrati. La chiave è protetta da Windows (DPAPI).</li><li>Non entra nei tuoi account presso i servizi: nessun login automatico.</li><li>Ogni richiesta ha un&#x27;anteprima e parte solo dopo la tua conferma esplicita.</li><li>Usa la tua casella di posta con le credenziali che inserisci tu. La lettura è in sola lettura e in locale.</li><li>Il programma contatta Lemon Squeezy per la licenza e scarica gli aggiornamenti firmati dei dati da un file pubblico.</li></ul></section>
+<section><h2>Come si usa</h2><ol class="steps"><li>Acquisti la licenza e scarichi il programma.</li><li>Doppio clic su cleancli.exe: scegli la lingua e inserisci la chiave di licenza.</li><li>Inserisci i tuoi dati e collega la tua casella e-mail (con codice di verifica).</li><li>Scegli il servizio, controlla l&#x27;anteprima e conferma.</li></ol></section>
+<section><h2>Limiti, da sapere</h2><ul class="limits"><li>L&#x27;esito dipende dai servizi a cui scrivi e dalla legge applicabile: nessuna garanzia di risultato.</li><li>Modelli di richiesta, termini di legge e contatti sono informativi e possono cambiare: sei tenuto a verificarli. Il programma non è consulenza legale.</li><li>Per Windows. La licenza vale su un numero limitato di computer, indicato all&#x27;acquisto.</li><li>I siti che bloccano i programmi automatici restano in modalità manuale.</li></ul></section>
+</main>
+<footer><div class="wrap"><p>Documenti: <a href="eula-it.html">Contratto di licenza (EULA)</a> · <a href="privacy-it.html">Informativa privacy</a> · Assistenza: <a href="mailto:mirenlock.support@gmail.com">mirenlock.support@gmail.com</a></p><p>Un prodotto Mirenlock, di Mauro D&#x27;Urso.</p></div></footer>
+</body></html>
